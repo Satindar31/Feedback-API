@@ -72,7 +72,7 @@ app.get('/v1/feedback', async (request, res) => {
 })
 
 
-app.listen({ port: 3000 }, (error, address) => {
+app.listen({ port: 3000, host: '0.0.0.0' }, (error, address) => {
   if (error) {
     console.error(error);
     process.exit(1);
